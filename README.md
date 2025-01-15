@@ -12,7 +12,6 @@ This repository contains a Jupyter Notebook that implements an **Emotion Detecti
 
 The **RAVDESS** dataset (Ryerson Audio-Visual Database of Emotional Speech and Song) is a high-quality dataset used for emotion recognition tasks. It contains:
 - **7356 audio files**, including emotional speech and song recordings.
-- **24 professional actors** (12 male, 12 female) performing emotional expressions.
 - **8 emotional states**: calm, happy, sad, angry, fearful, surprise, disgust, and neutral.
 - Each file is saved as a high-quality `.wav` format.
 
