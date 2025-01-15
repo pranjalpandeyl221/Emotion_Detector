@@ -1,27 +1,22 @@
-# Emotion Detector
+# Emotion Detection from Audio Signals
 
-This repository contains a Jupyter Notebook for building an **Emotion Detection System** using machine learning techniques. The system classifies human emotions based on input data, such as text, images, or other modalities.
+This repository contains a Jupyter Notebook that implements an **Emotion Detection System** using the **RAVDESS** (Ryerson Audio-Visual Database of Emotional Speech and Song) dataset. The system classifies emotions such as happiness, sadness, anger, and more based on audio signals using a deep learning model.
 
 ## Features
-- Preprocessing and feature extraction from the dataset.
-- Implementation of a machine learning or deep learning model for emotion classification.
-- Model evaluation with performance metrics.
-- Visualization of results for better interpretability.
+- Audio signal processing using `librosa` to extract MFCC features.
+- Preprocessing and encoding of emotion labels.
+- Implementation of a dense neural network using TensorFlow/Keras.
+- Model evaluation with accuracy metrics and visualizations.
 
-## Installation
+## Dataset
 
-To run this project, ensure you have the following dependencies installed:
+The **RAVDESS** dataset (Ryerson Audio-Visual Database of Emotional Speech and Song) is a high-quality dataset used for emotion recognition tasks. It contains:
+- **7356 audio files**, including emotional speech and song recordings.
+- **24 professional actors** (12 male, 12 female) performing emotional expressions.
+- **8 emotional states**: calm, happy, sad, angry, fearful, surprise, disgust, and neutral.
+- Each file is saved as a high-quality `.wav` format.
 
-- Python 3.7+
-- Jupyter Notebook
-- Required libraries:
-  - `numpy`
-  - `pandas`
-  - `matplotlib`
-  - `seaborn`
-  - `scikit-learn`
-  - `tensorflow` or `torch` (depending on the model used)
+The dataset is publicly available on [Kaggle](https://www.kaggle.com/uwrfkaggler/ravdess-emotional-speech-audio). In this project, only the **speech** files are used for emotion detection. The emotional labels are encoded for training the model.
 
-Install these dependencies using pip:
-```bash
-pip install numpy pandas matplotlib seaborn scikit-learn tensorflow
+### Dataset Structure
+The dataset is organized in folders based on the actor. Each file follows the naming convention:
